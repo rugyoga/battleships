@@ -175,7 +175,7 @@ class Battleships
     while move == HIT do
       move = make_move( pick_move )
     end
-    make_moves unless move == MISS
+    make_moves unless move == MISS || won
   end
 
   def lost
